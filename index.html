@@ -211,6 +211,39 @@
             margin: 0 auto 15px auto;
         }
 
+        /* Secção Clientes (Logotipos Concedidos) */
+        .clients-section {
+            background-color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .logos-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .client-logo-box {
+            width: 160px;
+            height: 100px;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 8px;
+            border: 2px dashed #ccc;
+            font-size: 0.9em;
+            font-weight: bold;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+        .client-logo-box:hover {
+            border-color: var(--accent-orange);
+            background-color: #fff;
+        }
+
         /* FAQ (Perguntas Frequentes) */
         .faq-section {
             padding: 60px 20px;
@@ -339,6 +372,7 @@
             <a href="#quem-somos">Quem Somos</a>
             <a href="#importancia">Vantagens</a>
             <a href="#como-funciona">Como Funciona</a>
+            <a href="#clientes">Nossos Clientes</a>
             <a href="#faq">FAQ</a>
             <a href="https://www.instagram.com/cavalcantemarcasepatentes/" target="_blank" class="nav-instagram">Instagram</a>
         </nav>
@@ -448,6 +482,23 @@
         </div>
     </div>
 
+    <!-- SECÇÃO: Clientes (Logotipos com Concessão) -->
+    <section class="clients-section" id="clientes">
+        <div class="container">
+            <h2 class="section-title" style="margin-top: 0;">Marcas Concedidas pelo INPI</h2>
+            <p class="section-subtitle">Estes são alguns dos nossos clientes que já possuem o seu Certificado de Registro e operam com total segurança jurídica no mercado.</p>
+            
+            <div class="logos-grid">
+                <!-- Para colocar a imagem de um cliente, basta substituir o texto pelo código da imagem, ex: <img src="cliente1.png" alt="Cliente"> -->
+                <div class="client-logo-box">Logotipo Cliente 1</div>
+                <div class="client-logo-box">Logotipo Cliente 2</div>
+                <div class="client-logo-box">Logotipo Cliente 3</div>
+                <div class="client-logo-box">Logotipo Cliente 4</div>
+                <div class="client-logo-box">Logotipo Cliente 5</div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECÇÃO: FAQ -->
     <div class="faq-section" id="faq">
         <h2 class="section-title">Perguntas Frequentes</h2>
@@ -484,7 +535,7 @@
                 <h4>Contato</h4>
                 <ul>
                     <li>📞 Telefones: (11) 96919-4086 / (11) 95340-5122</li>
-                    <li>📧 Email: contato@cavalcantemarcas.com.br</li>
+                    <li>📧 E-mail: doc.cavalcantemarcasepatentes@gmail.com</li>
                     <li>📍 Endereço: Rua Sarambé, 122 - Vila Arapua, São Paulo - SP, 04258-120</li>
                     <li>⏰ Atendimento: Seg a Sex, das 08:00 às 17:30</li>
                 </ul>
@@ -503,7 +554,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>CNPJ: 00.000.000/0001-00 | &copy; 2026 Cavalcante Marcas e Patentes. Todos os direitos reservados.</p>
+            <p>CNPJ: 44.425.611/0001-57 | &copy; 2026 Cavalcante Marcas e Patentes. Todos os direitos reservados.</p>
         </div>
     </footer>
 
